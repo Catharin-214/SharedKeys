@@ -25,7 +25,7 @@
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [LVite]
+- [Vite]
 - [html]
 - [css]
 
@@ -52,17 +52,6 @@ For Software:
 *compatibility percentage and logout page*
 
 
-# Build Photos
-![Team](Add photo of your team here
-
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
 
 ### Project Demo
 # Video
@@ -71,9 +60,9 @@ For Software:
 
 
 ## Team Contributions
-- [Angelina Raj]: [Specific contributions]
-- [Catharin Raju]: [Specific contributions]
-- [Ashna Vijayan]: [Specific contributions]
+- [Angelina Raj]: [frontend loginpages]
+- [Catharin Raju]: [compatibility and matching]
+- [Ashna Vijayan]: [designs and git]
 
 ---
 Made with ❤️ at TinkerHub
