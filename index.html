@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roommate Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="loginForm" class="form-container">
+            <h2>Login to Roommate Finder</h2>
+            <form onsubmit="return handleLogin(event)">
+                <input type="email" id="loginEmail" placeholder="Email" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p>New user? <a href="#" onclick="showSignup()">Create Account</a></p>
+        </div>
+
+        <div id="signupForm" class="form-container hidden">
+            <h2>Create Account</h2>
+            <form onsubmit="return handleSignup(event)">
+                <input type="email" id="signupEmail" placeholder="Email" required>
+                <input type="password" id="signupPassword" placeholder="Password" required>
+                <button type="submit">Next</button>
+            </form>
+            <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+        </div>
+
+        <div id="questionnaire" class="form-container hidden">
+            <h2>Roommate Preferences</h2>
+            <form onsubmit="return handleQuestionnaire(event)">
+                <div class="question">
+                    <label>What's your preferred sleep time?</label>
+                    <select name="sleepTime" required>
+                        <option value="early">Early (8-10 PM)</option>
+                        <option value="medium">Medium (10 PM-12 AM)</option>
+                        <option value="late">Late (After 12 AM)</option>
+                    </select>
+                </div>
+
+                <div class="question">
+                    <label>How clean do you keep your space?</label>
+                    <select name="cleanliness" required>
+                        <option value="very">Very Clean</option>
+                        <option value="moderate">Moderately Clean</option>
+                        <option value="relaxed">Relaxed About Cleaning</option>
+                    </select>
+                </div>
+
+                <div class="question">
+                    <label>How often do you have guests?</label>
+                    <select name="guests" required>
+                        <option value="rarely">Rarely</option>
+                        <option value="sometimes">Sometimes</option>
+                        <option value="often">Often</option>
+                    </select>
+                </div>
+
+                <div class="question">
+                    <label>What's your noise preference?</label>
+                    <select name="noise" required>
+                        <option value="quiet">Very Quiet</option>
+                        <option value="moderate">Moderate</option>
+                        <option value="loud">Don't Mind Noise</option>
+                    </select>
+                </div>
+
+                <button type="submit">Create Account</button>
+            </form>
+        </div>
+
+        <div id="matches" class="matches-container hidden">
+            <h2>Your Matches</h2>
+            <div id="matchesList"></div>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
